@@ -160,6 +160,25 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function initMap() {
+            let map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33134766
+                }
+        });
+        }
+    </script>
+
+      <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+      <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZraS77Y1xiMzeuJKMtrcBosT22BB7cM8&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
 </body>
 
 </html>
